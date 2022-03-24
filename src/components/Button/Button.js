@@ -1,8 +1,8 @@
-
+import styles from './styles/Button.module.css'
 const Button = ({value, logout})=>{
     return (
         <>
-            <button className="logout"  onClick={()=> logout()}>{value}</button>
+            <button className={styles.logout}  onClick={()=> logout()}>{value}</button>
         </>
     )
 }

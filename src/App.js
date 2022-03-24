@@ -9,13 +9,13 @@ import ConnectButton from './components/Button/ConnectButton';
 
 
 function  App () {
-  const {authenticate, isAuthenticated} = useMoralis()
+  const {authenticate, isAuthenticated, hasAuthError} = useMoralis()
 
   if(isAuthenticated){
     return <WalletComponent />
   }
 
-  return <ConnectButton authenticate={authenticate}/>
+  return <ConnectButton authenticate={authenticate} error ={hasAuthError}/>
 
 }
 

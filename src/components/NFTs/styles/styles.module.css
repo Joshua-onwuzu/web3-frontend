@@ -1,0 +1,46 @@
+.text {
+    padding: 20px;
+  	align-items: center;
+  }
+.nfts{
+padding : 5%;
+margin-top: 5%;
+}
+
+.emptySection{
+    padding : 5%;
+    width : 80vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.emptyHeader{
+color: #06414e;
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+grid-auto-rows: minmax(min-content, max-content);
+grid-gap: 20px;
+margin-top: 5%;
+
+}
+
+
+.article {
+  border-radius: 15px;
+  padding: 2%;
+  box-shadow: 2px 2px 6px 0px rgba(255, 251, 251, 0.3);
+  transition: 0.5s;
+}
+
+article:hover {
+  transform: translateY(-20px);
+}
+
+.img {
+  max-width: 100%;
+}
