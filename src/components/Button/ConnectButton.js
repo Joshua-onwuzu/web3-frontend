@@ -1,6 +1,3 @@
-import {useMoralis} from 'react-moralis';
-
-import LoginIn from './LoginInComponent';
 
 
 const ConnectButton = ({authenticate})=>{
