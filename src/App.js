@@ -1,10 +1,19 @@
+import './App.css';
+import LoginIn from './components/LoginInComponent';
+import {BrowserRouter,Routes, Route} from "react-router-dom";
+import {useMoralis} from 'react-moralis';
 
-function App() {
-  return (
-    <div className="App">
-      Create A Button
-    </div>
-  );
+import ConnectButton from './components/ConnectButton';
+
+
+
+function  App () {
+  const {authenticate, isAuthenticated} = useMoralis()
+  if(isAuthenticated){
+    return <LoginIn />
+  }
+  return <ConnectButton authenticate={authenticate}/>
+
 }
 
 export default App;
