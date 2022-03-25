@@ -7,7 +7,7 @@ const NFTsContainer = ({nfts})=>{
             <div className={styles.nfts}>
             <h3>NFTs :</h3>
                 <div className={styles.emptySection}>
-                    <h1 className={styles.emptyHeader}>You currently do not have nfts</h1>
+                    <h1 className={styles.emptyHeader}>You currently do not have NFTs</h1>
                 </div>
             </div>
         )

@@ -1,5 +1,3 @@
-import './App.css';
-
 import WalletComponent from './components/Wallet/WalletComponent';
 
 import {useMoralis} from 'react-moralis';
